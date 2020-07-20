@@ -43,7 +43,7 @@ const Course = ({match}) => {
     { cursoActual ? (
       <>
           <h1 className="m-cols-3">{cursoActual.titulo}</h1>
-          <img src={cursoActual.imagen} alt={cursoActual.titulo} />
+          <img src={cursoActual.imagen} alt={cursoActual.titulo} className="m-cols-1" />
           <p className="m-cols-2">{`Profesor ${cursoActual.profesor}`}</p>
       </>
         )

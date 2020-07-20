@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 
-const Card = ({id,titulo,imagen,imagenProfesor,profesor,precio}) => (
+const CourseCard = ({id,titulo,imagen,imagenProfesor,profesor,precio}) => (
   <article className="card">
     <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
       <Link to={`/cursos/${id}`}>
@@ -30,7 +30,7 @@ const Card = ({id,titulo,imagen,imagenProfesor,profesor,precio}) => (
   </article>
 )
 
-Card.propTypes = {
+CourseCard.propTypes = {
   titulo: PropTypes.string,
   imagen: PropTypes.string,
   imagenProfesor: PropTypes.string,
@@ -38,7 +38,7 @@ Card.propTypes = {
   precio: PropTypes.number
 }
 
-Card.defaultProps = {
+CourseCard.defaultProps = {
   titulo: "Título del curso",
   imagen: "No hay imagen",
   imagenProfesor: "No hay imagen del profesor",
@@ -46,4 +46,4 @@ Card.defaultProps = {
   precio: 0
 }
 
-export default Card
+export default CourseCard

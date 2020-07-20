@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Formulario extends React.Component {
+class Form extends React.Component {
   constructor(props) {
     super(props)
 
@@ -82,4 +82,4 @@ class Formulario extends React.Component {
 
 }
 
-export default Formulario
+export default Form
