@@ -8,7 +8,6 @@ import Header from './Organisms/Header'
 import History from './Pages/History'
 import Users from './Pages/Users'
 import Premium from './Pages/Premium'
-import SubirArchivos from './Pages/SubirArchivos'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const App = () => (
@@ -24,7 +23,6 @@ const App = () => (
       />
       <Route path="/usuarios" component={Users} />
       <Route path="/premium" component={Premium} />
-      <Route path="/subirArchivos" component={SubirArchivos} />
 
       <Route component={ () => (
         <div className="ed-grid">
